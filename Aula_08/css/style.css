@@ -1,0 +1,22 @@
+* {
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+.destaque-300 {
+font-weight: 300;
+
+
+}
+
+.destaque-500{
+font-weight: 500;
+
+}
+
+body{
+background-color: teal;
+background-image: url('../img/digimon.jpg');
+background-repeat: no-repeat;
+
+}
