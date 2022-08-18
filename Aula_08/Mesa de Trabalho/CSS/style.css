@@ -1,19 +1,18 @@
-@import
-url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-*{
+* {
+    font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 
 }
 
 body {
-background-color: #131313;
+background-color: #141414;
 
 }
 
 h1 {
 
     color: white;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 
 
 }
@@ -21,7 +20,9 @@ h1 {
 .media-picture {
 
     font-weight: 400px;
-    background-image: url('../img/Vingadores.jpg');
+    background-image: url('../img/vingadores2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
