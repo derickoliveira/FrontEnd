@@ -1,0 +1,77 @@
+* { margin: 0;
+    padding: 0;
+   
+ font-family: 'DynaPuff', cursive;
+ font-family: 'Roboto', sans-serif;
+  
+ }
+   
+ body {
+   background-image: url ("/Content/img//Cristo.jpg");
+   z-index: 1;
+ }
+ 
+ .header-principal {
+   padding: 30px 0px;
+   background-color: #C4C4C4;
+   display: flex;
+   justify-content: space-around;
+   
+ }
+ 
+ .menu-topo {
+ color: black
+  
+ }
+ 
+ .lista-menu-topo {
+   display: flex;
+   list-style: none;
+   justify-content: space-around;
+   width: 300px;
+   height: 100px;
+   align-items: center;
+ }
+ 
+ 
+ .retangulo {
+   padding: 200px 0px;
+   background-color: #8a8a8a 
+   
+ }
+ 
+ .quadrados div {
+     width: 300px;
+     height: 500px;
+     border-radius: 25px;
+     color: black;
+     padding: 20px;
+     margin: 10px;
+     font-family: 'Roboto', sans-serif;
+     display: inline-table;
+ }
+ 
+ .titulo-curiosidade{
+      font-family: 'DynaPuff', sans-serif;
+ }
+ 
+ .conteudo-curiosidade{
+      font-family: 'Roboto', sans-serif;
+ }
+      
+ .quadrado-01 {
+     background-color: white;
+     border: 5px solid rgb(94, 80, 80);
+         
+ }
+ 
+ .quadrado-02 {
+     background-color: white;
+     border: 5px solid black;
+ 
+ }
+ 
+ .quadrado-03 {
+     background-color: white;
+     border: 5px solid #bababa;
+ }
