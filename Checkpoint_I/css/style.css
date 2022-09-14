@@ -1,80 +1,213 @@
-* { margin: 0;
-    padding: 0;
-   
- font-family: 'DynaPuff', cursive;
- font-family: 'Roboto', sans-serif;
-  
- }
-   
- body {
-   background-image: url ("/Content/img//Cristo.jpg");
-   z-index: 1;
- }
+*{ margin: 0;
+  padding: 0;
  
- .header-principal {
-   padding: 30px 0px;
-   background-color: #C4C4C4;
-   display: flex;
-   justify-content: space-around;
-   
- }
+font-family: 'DynaPuff', cursive;
+font-family: 'Roboto', sans-serif;
+}
  
- .menu-topo {
- color: black
-  
- }
+body {
+ background-image: url("./img/background.webp");
+ background-image:repeat;
+ background-size: cover;
+}
+
+.header-principal {
+ padding: 30px 0px;
+ display: flex;
+ justify-content: space-around;
+}
+
+.logo {
+ width: 200px;
+ height: 120px;
+}
+
+.logo img {
+ width: 100%;
+ height: auto;
+}
+
+
+nav ul {
+  display: flex; 
+  justify-content: center;
+  list-style: none;
+}
+nav ul li {
+  margin: 20px;
+}
+nav ul li a{
+  position:relative;
+  margin:15px;
+  font-size:25px;  
+  color:var(--secondary-color);
+  text-decoration: none;    
+}
+
+nav ul li a::before{
+  content:'';
+  background: var(--decoration-color);
+  position:absolute;
+  bottom:-10px;
+  height:5px;
+  width: 0;
+  transition: width 0.3s;
+
+}
+
+nav ul li a:hover::before{
+width: 100%;
+
+}
+
+.lista-menu-topo {
+ display: flex;
+ list-style: none;
+ justify-content: space-around;
+ width: 300px;
+ height: 100px;
+ align-items: center;
+}
+
+.retangulo {
+ display: flex;
+ flex-direction: column;
+ align-items: stretch;
+ justify-content: space-around;
+ width: 100vw;
+}
+
+.Curiodidades {
+ padding: 10px;
+ margin: 10px 0px;
+}
+
+.curiosidade-01 {
+
+ color: white;
+ padding: 20px
  
- .lista-menu-topo {
-   display: flex;
-   list-style: none;
-   justify-content: space-around;
+}
+
+#video {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+}
+
+
+.titulo-curiosidade{
+    font-family: 'DynaPuff', sans-serif;
+}
+
+.conteudo-curiosidade{
+    font-family: 'Roboto', sans-serif;
+}
+
+.quadrados div {
    width: 300px;
-   height: 100px;
-   align-items: center;
- }
- 
- 
- .retangulo {
-   padding: 200px 0px;
-   background-color: #8a8a8a 
+   height: 350px;
+   border-radius: 25px;
+   color: black;
+   padding: 20px;
+   margin: 10px;
+   font-family: 'Roboto', sans-serif;
+   display: inline-table
    
- }
- 
- .quadrados div {
-     width: 300px;
-     height: 500px;
-     border-radius: 25px;
-     color: black;
-     padding: 20px;
-     margin: 10px;
-     font-family: 'Roboto', sans-serif;
-     display: inline-table;
- }
- 
- .titulo-curiosidade{
-      font-family: 'DynaPuff', sans-serif;
- }
- 
- .conteudo-curiosidade{
-      font-family: 'Roboto', sans-serif;
- }
-      
- .quadrado-01 {
-     background-color: white;
-     border: 5px solid rgb(94, 80, 80);
-         
- }
- 
- .quadrado-02 {
-     background-color: white;
-     border: 5px solid black;
- 
- }
- 
- .quadrado-03 {
-     background-color: white;
-     border: 5px solid #bababa;
+}
+
+.quadrado-x {
+   background-color: white;
+   border: 3px solid #3a7bcf;
+   width: 33%;
+}
 
 
-     background-image: ;
- }
+footer{
+ display: flex;
+ flex-flow: row;
+ padding: 50px;
+ height: 50px;
+ background-color:  #f5f5f5;
+}
+
+#linkedin, #git {
+ display: flex;
+ flex-flow: column;
+ padding: 10px;
+}
+
+.fot_lkd{
+ list-style: none;
+}
+
+@media (max-width: 425px){
+
+.quadrado-x{
+ width: 100vw;
+}
+.quadrado-x img{
+ width: 100%;
+}
+ 
+.retangulo img{
+ width: 100vw;
+}
+ 
+footer{
+ width: 100vw;
+ height: 100px;
+ padding: 0;
+}
+
+#video{
+ width: 100vw;
+ margin: 0;
+ padding: 0;
+}
+
+#video iframe{
+ width: 100%;
+
+}
+ 
+}
+
+@media (max-width: 1280px){
+
+.quadrados div {
+ width: 20vw;
+ display: inline-table;
+   
+}
+.quadrado-x{
+ width: 100vw;
+}
+.quadrado-x img{
+ width: 100%;
+}
+ 
+.retangulo img{
+ width: 100vw;
+}
+ 
+footer{
+ width: 100vw;
+ height: 100px;
+ padding: 0;
+}
+
+#video{
+ width: 100vw;
+ margin: 0;
+ padding: 0;
+}
+
+#video iframe{
+ width: 50%;
+
+}
+ 
+}
