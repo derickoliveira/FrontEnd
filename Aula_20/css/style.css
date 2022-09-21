@@ -1,0 +1,110 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.listagem-produtos {
+
+    display: flex;
+    justify-content: center;
+}
+
+.card-produto {
+    max-width: 90%;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-produto{
+    width: 100%;
+  
+}
+
+.dados-produtos {
+    padding: 20px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: hsl(228, 12%, 48%)
+}
+
+h1 {
+    font-size: 34px;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    
+}
+
+.precos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.precos .com-desconto {
+
+    font-weight: 700;
+    color:hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+}
+
+.precos .sem-desconto {
+
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.botao-adicionar-carrinho {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100% ;
+    padding: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.botao-adicionar-carrinho:hover{
+    background-color: hsl(228, 12%, 48%);
+    cursor: pointer;
+} 
+
+.botao-adicionar-carrinho img {
+    width: 15px;
+}
+
+
+@media (min-width:1440px) {
+
+.card-produto {
+    flex-direction: row;
+
+}
+}
