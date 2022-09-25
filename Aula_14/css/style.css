@@ -17,7 +17,7 @@ body {
 
 .main-header {
 
-    background-color: #505050;
+    background-color: #951717;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +74,7 @@ body {
 .media-card {
 
     width: 400px;
-    background-color: #1d1d1d;
+    background-color: #35128d;
     border-radius: 12px;
     overflow: hidden;
 

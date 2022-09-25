@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+
+}
+
+html {
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+    
+}
+
+input:active {
+    background-color: #46434310;
+}
+
+
+.home {
+    color: #E51B3E;
+}
+
+.filme {
+    border-radius: 15px;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.botao {
+    visibility: hidden;
+    margin-left: 80px;
+}
+
+.lista-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    font-size: 19px;
+    color: #171717;
+}
+
+
+.banner {
+    background-image: url(../img/fundo_img.png);
+    background-repeat: no-repeat;
+    height: 1023px;
+    background-size: cover;
+    box-shadow: 6px 6px 13px 0px rgba(20, 20, 20, 0.633);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+    justify-content: center;
+
+}
+
+
+.conteudo-banner::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.conteudo-banner h1 {
+    color: #E51B3E;
+    font-weight: 900;
+    font-size: 62px;
+}
+
+.conteudo-banner p {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 30px;
+}
+
+.botao-explorar {
+    width: 320px;
+    height: 70px;
+    background: rgba(51, 187, 105, 0.05);
+    border: 1px solid #33BB69;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+}
+
+.botao-explorar:hover {
+    cursor: pointer;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s
+}
+
+.banner-cards {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    
+}
+
+.card-filme {
+    height: auto;
+    display: inline;
+
+    
+}
+
+#itens {
+    font-size: 44px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+    text-align: center;
+    
+}
+
+.titulos {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.texto-filme {
+    background-color: #f4f4f4;
+    position: relative;
+    top: -250px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 386px; 
+}
+
+.descricao {
+    width: 407px;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 290;
+    text-align: justify;
+    padding: 10px;
+    text-align: center;
+}
+
+.botao-abrir {
+    margin: 50px 30px;
+    background-color: #33BB69;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 20px;
+    border-color: #33BB69;
+    border-style: none;
+    position: static;
+    letter-spacing: 2px;
+}
+
+.botao-abrir:hover {
+    cursor: pointer;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.5s
+}
+
+
+/* Rodapé */
+
+#rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #171717;
+    padding: 10px;
+}
+
+.item-rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.rodape-fim {
+    background-color: #171717;
+    text-align: center;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.nomes {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.foto {
+    display: flex;
+}
+
+.foto img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.dev {
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
+
+
+/* Responsividade */
+
+@media (max-width: 428px) {  
+
+    header {
+        width: 100%;
+        height: 100px;
+    }
+
+      .lista-menu {
+        visibility: hidden;
+        flex-direction: column;
+        
+
+    }
+  
+
+    .titulo-capa {
+        width: 100%;
+    }
+
+    .titulo-capa p {
+        width: 438px;
+        margin-top: 10%;
+
+    }
+
+    #rodape {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        gap: 25px;
+    }
+
+    .conteudo-banner h1 {
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    .conteudo-banner p {
+        font-size: 15px;
+        font-weight: 300;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .botao-explorar {
+        width: 200px;
+        height: 60px;
+    }
+
+    .login-box {
+        max-width: 80%;
+    }
+
+    .fundo-login {
+        background-image: url(./img/fundobanner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagens-filme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .capa-filme {
+        width: 350px;
+    }
+
+    .texto-capa{
+        display: block;
+        text-align: center;
+        width: 428px;
+    }
+
+    .texto-capa p {
+        text-align: justify;
+        margin-left: -15%; 
+        margin-bottom: 5%;      
+    }
+
+    .diretor-info {
+        margin-bottom: 2%;
+    }
+
+    #critica{
+    margin-bottom: 2%;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 12vh;
+        margin-bottom: 2%;
+    }
+    
+    .area-login {
+        max-width: 80%;
+    }
+
+    .area-login img {
+        max-width: 90%;
+    }
+
+    #youtube {
+        width: 400px;
+        height: 225px;
+    }
+
+    .banner-movie img {
+        width: 80vw;
+        height: 40vw;
+        margin-top: 300px;
+        border-radius: 20px;
+    }
+
+    .movies {
+        padding: 0 50px;
+    }  
+    
+    .bg_video{
+    width: 100%;   
+    }
+}
