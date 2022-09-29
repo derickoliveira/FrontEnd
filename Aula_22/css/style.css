@@ -1,25 +1,16 @@
-.container {
-    display: grid;
-    grid-gap: 3px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 40px 200px 40px;
+body {
+  background-color: black;
 }
 
-.header {
-    grid-column: 1 / -2;
+h1 {
+  color: pink;
 }
 
-.menu {
-    grid-row:      1 / -1;
-    grid-column:  -2 / -1
+h2 {
+  color: white;
 }
 
-.content {
-    grid-column: 1 / -2;
-}
-
-.footer {
-    grid-column: 1 / -2;
-
-}
-
+ul li {
+  color: white;
+  border: 1px;
+}/*# sourceMappingURL=style.css.map */

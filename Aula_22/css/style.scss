@@ -1,0 +1,22 @@
+$cor-texto: white;
+
+body {
+    background-color: black;
+}
+
+h1 { 
+    color: pink;
+
+}
+
+h2 { 
+    color: $cor-texto;
+}
+
+ul {
+    li { 
+    color: $cor-texto;
+    border: 1px;
+}
+
+}
